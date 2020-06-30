@@ -14,7 +14,7 @@ namespace RegistroPedidosSuplidor.Contexto
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Date Source= DATA\OrdenesSuplidores.db");
+            optionsBuilder.UseSqlite(@"Data Source= DATA\OrdenesSuplidores.db");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
