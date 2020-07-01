@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Menu>
+            <MenuItem Header="Registros">
+                <MenuItem Header="Registrar Orden" Click="MenuItem_Click"/>
+            </MenuItem>
 
+            <MenuItem Header="Consultas">
+                <MenuItem Header="Consultar Orden"/>
+            </MenuItem>
+        </Menu>
     </Grid>
 </Window>

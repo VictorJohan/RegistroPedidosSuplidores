@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using RegistroPedidosSuplidor.UI.Registro;
 
 namespace RegistroPedidosSuplidor
 {
@@ -23,6 +24,12 @@ namespace RegistroPedidosSuplidor
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            rOrdenes rOrdenes = new rOrdenes();
+            rOrdenes.Show();
         }
     }
 }
