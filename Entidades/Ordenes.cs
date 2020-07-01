@@ -11,7 +11,7 @@ namespace RegistroPedidosSuplidor.Entidades
         [Key]
         public int OrdenId { get; set; }
         public DateTime Fecha { get; set; } = DateTime.Now;
-        public string SuplidorId { get; set; }
+        public int SuplidorId { get; set; }
         public double Monto { get; set; }
 
         [ForeignKey ("OrdenId")]

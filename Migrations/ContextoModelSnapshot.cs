@@ -28,8 +28,8 @@ namespace RegistroPedidosSuplidor.Migrations
                     b.Property<double>("Monto")
                         .HasColumnType("REAL");
 
-                    b.Property<string>("SuplidorId")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("SuplidorId")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("OrdenId");
 

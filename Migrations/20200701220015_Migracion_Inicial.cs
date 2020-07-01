@@ -14,7 +14,7 @@ namespace RegistroPedidosSuplidor.Migrations
                     OrdenId = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Fecha = table.Column<DateTime>(nullable: false),
-                    SuplidorId = table.Column<string>(nullable: true),
+                    SuplidorId = table.Column<int>(nullable: false),
                     Monto = table.Column<double>(nullable: false)
                 },
                 constraints: table =>
