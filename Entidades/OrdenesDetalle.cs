@@ -12,5 +12,13 @@ namespace RegistroPedidosSuplidor.Entidades
         public int Id { get; set; }
         public int Cantidad { get; set; }
         public double Costo { get; set; }
+
+        public OrdenesDetalle(int ordenId, int id, int cantidad, double costo)
+        {
+            OrdenId = ordenId;
+            Id = id;
+            Cantidad = cantidad;
+            Costo = costo;
+        }
     }
 }

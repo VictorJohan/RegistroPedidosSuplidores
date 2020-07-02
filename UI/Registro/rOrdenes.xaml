@@ -17,7 +17,7 @@
                 <TextBox Name="OrdenIdTextBox" Width="303" Height="20" Margin="5,0" Text="{Binding OrdenId}"/>
                 
                 <!--Button-->
-                <Button Name="BucarButton" Width="60" Height="20" Margin="5,0">
+                <Button Name="BucarButton" Width="60" Height="20" Margin="5,0" Click="BucarButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/search.png" />
                         <Label Content="Buscar" Margin="4,0" Padding="-1"/>
@@ -53,7 +53,7 @@
                         <TextBox Name="CostoTextBox" Width="191" Height="20"  HorizontalAlignment="Left"/>
 
                         <!--AgregarButto-->
-                        <Button Name="AgregarButton" Width="69" Height="20" Margin="8,0,5,0">
+                        <Button Name="AgregarButton" Width="69" Height="20" Margin="8,0,5,0" Click="AgregarButton_Click">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="/Resources/agregar.png" />
                                 <Label Content="Agregar" Margin="4,0" Padding="-1"/>
@@ -61,7 +61,7 @@
                         </Button>
                         
                         <!--RemoverButton-->
-                        <Button Name="RemoverButton" Width="72" Height="20" Margin="5,0">
+                        <Button Name="RemoverButton" Width="72" Height="20" Margin="5,0" Click="RemoverButton_Click">
                             <StackPanel Orientation="Horizontal">
                                 <Image Source="/Resources/remover.png" />
                                 <Label Content="Remover" Margin="4,0" Padding="-1"/>
@@ -70,7 +70,7 @@
 
                     </StackPanel>
 
-                    <DataGrid Name="OrdenDataGrid" AutoGenerateColumns="False" HorizontalAlignment="Left" ItemsSource="{Binding OrdenesDetalle}" Margin="0,6,0,0" Height="100" Width="350" Background="#FFD5E7F3">
+                    <DataGrid Name="DetalleDataGrid" Height="100" HorizontalAlignment="Left" AutoGenerateColumns="False" Margin="0,5,5,0" ItemsSource="{Binding OrdenesDetalle}" Width="345">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="OrdenId" Binding="{Binding OrdenId}"/>
                             <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
@@ -84,21 +84,21 @@
 
             <!--Barra de botones-->
             <StackPanel Orientation="Horizontal" Width="210" Margin="0,11,0,0">
-                <Button Name="NuevoButton" Width="60" Height="20">
+                <Button Name="NuevoButton" Width="60" Height="20" Click="NuevoButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/orden.png" />
                         <Label Content="Nuevo" Padding="-1" Margin="4,0"/>
                     </StackPanel>
                 </Button>
 
-                <Button Name="GuardarButton" Width="67" Height="20" Margin="5,0,0,0">
+                <Button Name="GuardarButton" Width="67" Height="20" Margin="5,0,0,0" Click="GuardarButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/save.png" />
                         <Label Content="Guardar" Padding="-1" Margin="4,0"/>
                     </StackPanel>
                 </Button>
 
-                <Button Name="EliminarButton" Width="67" Height="20" Margin="5,0,0,0">
+                <Button Name="EliminarButton" Width="67" Height="20" Margin="5,0,0,0" Click="EliminarButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/delete.png" />
                         <Label Content="Eliminar" Padding="-1" Margin="4,0"/>

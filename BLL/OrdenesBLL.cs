@@ -1,16 +1,14 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using RegistroPedidosSuplidor.DAL;
 using RegistroPedidosSuplidor.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
 
 namespace RegistroPedidosSuplidor.BLL
 {
-    public class OdenesBLL
+    public class OrdenesBLL
     {
         public static bool Guardar(Ordenes orden)
         {
@@ -49,7 +47,7 @@ namespace RegistroPedidosSuplidor.BLL
 
             try
             {
-                if(contexto.Ordenes.Add(orden) != null)
+                if (contexto.Ordenes.Add(orden) != null)
                     ok = contexto.SaveChanges() > 0;
             }
             catch (Exception)
